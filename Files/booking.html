@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book a Service - AutoCare Xpress</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h1><span class="orange">Auto</span>Care <span class="blue">Xpress</span></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="booking.html" class="active">Book Now</a>
+      <a href="about.html">About</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="section booking-section">
+    <h2 class="section-title">Book a <span class="blue">Service</span></h2>
+    <form class="booking-form">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <input type="text" placeholder="Address" required>
+      <input type="text" placeholder="Car Model & Year" required>
+      <input type="datetime-local" required>
+      <select required>
+        <option value="">Select Package</option>
+        <option>Basic Care</option>
+        <option>Premium Care</option>
+        <option>Deluxe Care</option>
+        <option>Oil Change</option>
+        <option>Interior Cleaning</option>
+        <option>Exterior Washing</option>
+        <option>Windshield Repair</option>
+      </select>
+      <textarea placeholder="Additional Notes (Optional)" rows="4"></textarea>
+      <button type="submit" class="btn-primary">Book Now</button>
+    </form>
+  </section>
+
+  <footer class="footer-bottom">
+    <p>&copy; 2025 AutoCare Xpress. All rights reserved.</p>
+  </footer>
+</body>
+</html>

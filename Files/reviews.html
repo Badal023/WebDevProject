@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Customer Reviews - AutoCare Xpress</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h1><span class="orange">Auto</span>Care <span class="blue">Xpress</span></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="booking.html">Book Now</a>
+      <a href="about.html">About</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h2>What Our Customers Say</h2>
+    <div class="cards reviews-grid">
+      <div class="card review">
+        <img src="https://i.pravatar.cc/50?img=1" alt="Customer 1">
+        <p class="stars">★★★★★</p>
+        <p>"Great service and friendly staff. My car feels brand new!"</p>
+      </div>
+      <div class="card review">
+        <img src="https://i.pravatar.cc/50?img=2" alt="Customer 2">
+        <p class="stars">★★★★☆</p>
+        <p>"Good value for money. Highly recommended for busy people."</p>
+      </div>
+      <div class="card review">
+        <img src="https://i.pravatar.cc/50?img=3" alt="Customer 3">
+        <p class="stars">★★★★★</p>
+        <p>"The deluxe package is totally worth it. Excellent work!"</p>
+      </div>
+      <div class="card review">
+        <img src="https://i.pravatar.cc/50?img=4" alt="Customer 4">
+        <p class="stars">★★★★☆</p>
+        <p>"Nice experience, but booking could be a bit quicker."</p>
+      </div>
+      <div class="card review">
+        <img src="https://i.pravatar.cc/50?img=5" alt="Customer 5">
+        <p class="stars">★★★★★</p>
+        <p>"Affordable and fast. Definitely coming back for my next service."</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background-color: #f9f9f9; padding: 40px;">
+    <h2>Leave a Review</h2>
+    <form class="review-form" style="max-width: 600px; margin: auto;">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email (not displayed)" required />
+      <select required>
+        <option value="">Rating</option>
+        <option>★★★★★</option>
+        <option>★★★★☆</option>
+        <option>★★★☆☆</option>
+        <option>★★☆☆☆</option>
+        <option>★☆☆☆☆</option>
+      </select>
+      <textarea rows="4" placeholder="Write your review..." required></textarea>
+      <button type="submit" class="btn-primary">Submit Review</button>
+    </form>
+  </section>
+
+  <footer class="footer-bottom" style="text-align: center; padding: 20px;">
+    &copy; 2025 AutoCare Xpress. All rights reserved.
+  </footer>
+</body>
+</html>
