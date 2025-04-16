@@ -20,32 +20,62 @@
     </nav>
   </header>
 
-  <section class="section booking-section">
-    <h2 class="section-title">Book a <span class="blue">Service</span></h2>
-    <form class="booking-form">
-      <input type="text" placeholder="Full Name" required>
-      <input type="email" placeholder="Email" required>
-      <input type="tel" placeholder="Phone Number" required>
-      <input type="text" placeholder="Address" required>
-      <input type="text" placeholder="Car Model & Year" required>
-      <input type="datetime-local" required>
-      <select required>
-        <option value="">Select Package</option>
-        <option>Basic Care</option>
-        <option>Premium Care</option>
-        <option>Deluxe Care</option>
-        <option>Oil Change</option>
-        <option>Interior Cleaning</option>
-        <option>Exterior Washing</option>
-        <option>Windshield Repair</option>
-      </select>
-      <textarea placeholder="Additional Notes (Optional)" rows="4"></textarea>
-      <button type="submit" class="btn-primary">Book Now</button>
-    </form>
+  <section class="services">
+    <h2>Book a <span class="blue">Service</span></h2>
+    <p>Fill out the form below to schedule your car care appointment.</p>
+
+    <div class="contact-container">
+      <div class="contact-form">
+        <form>
+          <input type="text" name="fullName" placeholder="Full Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <input type="tel" name="phone" placeholder="Phone Number" required />
+          <input type="text" name="address" placeholder="Address" required />
+          <input type="text" name="carModel" placeholder="Car Model & Year" required />
+          <input type="datetime-local" name="dateTime" required />
+
+          <select name="package" required>
+            <option value="">Select Package</option>
+            <option>Basic Care</option>
+            <option>Premium Care</option>
+            <option>Deluxe Care</option>
+            <option>Oil Change</option>
+            <option>Interior Cleaning</option>
+            <option>Exterior Washing</option>
+            <option>Windshield Repair</option>
+          </select>
+
+          <textarea name="notes" rows="4" placeholder="Additional Notes (Optional)"></textarea>
+          <button type="submit" class="btn-primary">Book Now</button>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <h3>Need Help?</h3>
+        <p>Email: <a href="mailto:support@autocarexpress.com">support@autocarexpress.com</a></p>
+        <p>Call: +91-9876543210</p>
+      </div>
+    </div>
   </section>
 
-  <footer class="footer-bottom">
-    <p>&copy; 2025 AutoCare Xpress. All rights reserved.</p>
+  <footer>
+    <div class="footer-content">
+      <div>
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a><br>
+        <a href="pricing.html">Pricing</a><br>
+        <a href="booking.html">Book Now</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: support@autocarexpress.com</p>
+        <p>Phone: +91-9876543210</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 AutoCare Xpress. All rights reserved.
+    </div>
   </footer>
 </body>
-</html>
+  </html>
+      
