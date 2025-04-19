@@ -40,7 +40,7 @@ Welcome to the **AutoCare** website project! This is a modern, responsive web ap
 
 ## Live Demo
 
-You can view the live version of the website at: [https://your-live-site-url.com](https://your-live-site-url.com)
+You can view the live version of the website after download the zip form.
 
 ## Contributing
 Contributions are welcome! Please fork this repository, create a new branch, and submit a pull request with your changes.
