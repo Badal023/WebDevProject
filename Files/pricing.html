@@ -1,231 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pricing - AutoCare Xpress</title>
-  <link rel="stylesheet" href="styles/style.css"/>
-  <style>
-    .model-selector {
-      text-align: center;
-      margin: 2rem auto;
-    }
-    .model-selector select {
-      padding: 0.5rem 1rem;
-      margin: 0.5rem;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pricing - AutoCare Xpress</title>
+  <link rel="stylesheet" href="styles/style.css"/>
+  <style>
+    .model-selector {
+      text-align: center;
+      margin: 2rem auto;
+    }
+    .model-selector select {
+      padding: 0.5rem 1rem;
+      margin: 0.5rem;
+    }
+  </style>
 </head>
 <body>
-  <header class="navbar">
-    <h1><span class="orange">Auto</span>Care <span class="blue">Xpress</span></h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="pricing.html" class="active">Pricing</a>
-      <a href="booking.html">Book Now</a>
-      <a href="about.html">About</a>
-      <a href="reviews.html">Reviews</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-      <a href="privacy.html">Privacy Policy</a>
-    </nav>
-  </header>
+  <header class="navbar">
+    <h1><span class="orange">Auto</span>Care <span class="blue">Xpress</span></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="pricing.html" class="active">Pricing</a>
+      <a href="booking.html">Book Now</a>
+      <a href="about.html">About</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+  </header>
 
-  <section class="model-selector">
-    <h2>Select Your Car</h2>
-    <select id="brand-select">
-      <option value="">Select Brand</option>
-      <option value="Maruti">Maruti</option>
-      <option value="Hyundai">Hyundai</option>
-      <option value="Tata">Tata</option>
-      <option value="Toyota">Toyota</option>
-      <option value="Mahindra">Mahindra</option>
-      <option value="Honda">Honda</option>
-      <option value="Kia">Kia</option>
-      <option value="Renault">Renault</option>
-      <option value="Volkswagen">Volkswagen</option>
-      <option value="Skoda">Skoda</option>
-    </select>
+  <section class="section">
+    <h2>Select Your Car</h2>
+    <select id="brand-select">
+      <option value="">Select Brand</option>
+    </select>
+    <select id="model-select" disabled>
+      <option value="">Select Model</option>
+    </select>
+  </section>
 
-    <select id="model-select">
-      <option value="">Select Model</option>
-    </select>
-  </section>
+  <section class="section">
+    <h2>Service Packages</h2>
+    <div class="package-row">
+      <div class="package-card">
+        <h3>Basic Care</h3>
+        <h4 id="basic-price">₹ Choose a model</h4>
+        <ul>
+          <li>Standard Oil Change</li>
+          <li>Exterior Hand Wash</li>
+          <li>Fluid Level Check</li>
+          <li>Vacuum Interior</li>
+        </ul>
+        <a href="booking.html" class="btn-secondary">Book Now</a>
+      </div>
+      <div class="package-card featured">
+        <h3>Premium Care</h3>
+        <h4 id="premium-price">₹ Choose a model</h4>
+        <ul>
+          <li>Synthetic Oil Change</li>
+          <li>Premium Wash & Wax</li>
+          <li>Complete Fluid Top-up</li>
+          <li>Interior Shampoo + Brush</li>
+          <li>Basic Windshield Repair</li>
+        </ul>
+        <a href="booking.html" class="btn-primary">Book Now</a>
+      </div>
+      <div class="package-card">
+        <h3>Deluxe Care</h3>
+        <h4 id="deluxe-price">₹ Choose a model</h4>
+        <ul>
+          <li>Premium Synthetic Oil</li>
+          <li>Deluxe Wash + Polish</li>
+          <li>All Fluids + Filters Replaced</li>
+          <li>Leather Conditioning</li>
+          <li>Engine Bay Degreasing</li>
+          <li>Full Windshield Replacement</li>
+        </ul>
+        <a href="booking.html" class="btn-secondary">Book Now</a>
+      </div>
+    </div>
+  </section>
 
-  <section class="section">
-    <h2>Service Packages</h2>
-    <div class="package-row">
-      <div class="package-card">
-        <h3>Basic Care</h3>
-        <h4 id="basic-price">₹ Select Model To get Price</h4>
-        <ul>
-          <li>Standard Oil Change</li>
-          <li>Exterior Hand Wash</li>
-          <li>Fluid Level Check</li>
-          <li>Vacuum Interior</li>
-        </ul>
-        <a href="booking.html" class="btn-secondary">Book Now</a>
-      </div>
-      <div class="package-card featured">
-        <h3>Premium Care</h3>
-        <h4 id="premium-price">₹ Select Model To get Price</h4>
-        <ul>
-          <li>Synthetic Oil Change</li>
-          <li>Premium Wash & Wax</li>
-          <li>Complete Fluid Top-up</li>
-          <li>Interior Shampoo + Brush</li>
-          <li>Basic Windshield Repair</li>
-        </ul>
-        <a href="booking.html" class="btn-primary">Book Now</a>
-      </div>
-      <div class="package-card">
-        <h3>Deluxe Care</h3>
-        <h4 id="deluxe-price">₹ Select Model To get Price</h4>
-        <ul>
-          <li>Premium Synthetic Oil</li>
-          <li>Deluxe Wash + Polish</li>
-          <li>All Fluids + Filters Replaced</li>
-          <li>Leather Conditioning</li>
-          <li>Engine Bay Degreasing</li>
-          <li>Full Windshield Replacement</li>
-        </ul>
-        <a href="booking.html" class="btn-secondary">Book Now</a>
-      </div>
-    </div>
-  </section>
+  <section class="section">
+    <h2>Individual Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h4>Oil Change</h4>
+        <p id="oil-price">₹ Choose a model</p>
+        <a href="booking.html" class="btn-primary">Book Now</a>
+      </div>
+      <div class="card">
+        <h4>Interior Cleaning</h4>
+        <p id="interior-price">₹ Choose a model</p>
+        <a href="booking.html" class="btn-primary">Book Now</a>
+      </div>
+      <div class="card">
+        <h4>Exterior Cleaning</h4>
+        <p id="exterior-price">₹ Choose a model</p>
+        <a href="booking.html" class="btn-primary">Book Now</a>
+      </div>
+      <div class="card">
+        <h4>Windshield Repair</h4>
+        <p id="windshield-price">₹ Choose a model</p>
+        <a href="booking.html" class="btn-primary">Book Now</a>
+      </div>
+    </div>
+  </section>
 
-  <section class="section">
-    <h2>Individual Services</h2>
-    <div class="service-cards">
-      <div class="card">
-        <h4>Oil Change</h4>
-        <p id="oil-price">₹ Select Model To get Price</p>
-        <a href="booking.html" class="btn-primary">Book Now</a>
-      </div>
-      <div class="card">
-        <h4>Interior Cleaning</h4>
-        <p id="interior-price">₹ Select Model To get Price</p>
-        <a href="booking.html" class="btn-primary">Book Now</a>
-      </div>
-      <div class="card">
-        <h4>Exterior Cleaning</h4>
-        <p id="exterior-price">₹ Select Model To get Price</p>
-        <a href="booking.html" class="btn-primary">Book Now</a>
-      </div>
-      <div class="card">
-        <h4>Windshield Repair</h4>
-        <p id="windshield-price">₹ Select Model To get Price</p>
-        <a href="booking.html" class="btn-primary">Book Now</a>
-      </div>
-    </div>
-  </section>
+  <footer>
+    <div class="footer-content">
+      <div>
+        <h4>AutoCare Xpress</h4>
+        <p>Providing exceptional auto care across India. Quality, convenience, and customer satisfaction guaranteed.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="booking.html">Book Now</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Service Hours</h4>
+        <p>Mon - Fri: 9 AM - 7 PM</p>
+        <p>Sat: 9 AM - 5 PM</p>
+        <p>Sun: 10 AM - 2 PM</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>123 Auto Care Road, Bangalore</p>
+        <p>+91-98765-43210</p>
+        <p>info@autocarexpress.in</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 AutoCare Xpress. All Rights Reserved.</p>
+    </div>
+  </footer>
 
-  <footer>
-    <div class="footer-content">
-      <div>
-        <h4>AutoCare Xpress</h4>
-        <p>Providing exceptional auto care across India. Quality, convenience, and customer satisfaction guaranteed.</p>
-      </div>
-      <div>
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="booking.html">Book Now</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Service Hours</h4>
-        <p>Mon - Fri: 9 AM - 7 PM</p>
-        <p>Sat: 9 AM - 5 PM</p>
-        <p>Sun: 10 AM - 2 PM</p>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <p>123 Auto Care Road, Bangalore</p>
-        <p>+91-98765-43210</p>
-        <p>info@autocarexpress.in</p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 AutoCare Xpress. All Rights Reserved.</p>
-    </div>
-  </footer>
-
-  <script>
-    const modelData = {
-      "Maruti": ["Alto", "Swift", "Baleno"],
-      "Hyundai": ["i10", "i20", "Creta"],
-      "Tata": ["Punch", "Tiago", "Nexon"],
-      "Toyota": ["Glanza", "Innova", "Fortuner"],
-      "Mahindra": ["Bolero", "XUV300", "Thar"],
-      "Honda": ["Amaze", "City", "WR-V"],
-      "Kia": ["Sonet", "Seltos", "Carens"],
-      "Renault": ["Kwid", "Triber", "Kiger"],
-      "Volkswagen": ["Polo", "Virtus", "Taigun"],
-      "Skoda": ["Fabia", "Slavia", "Kushaq"]
-    };
-
-    const priceChart = {
-      "Alto": [2999, 5499, 7999, 199, 149, 149, 349],
-      "Swift": [3299, 5799, 8499, 249, 199, 199, 399],
-      "Baleno": [3599, 5999, 8799, 299, 249, 249, 449],
-      "i10": [3199, 5599, 8199, 229, 179, 179, 379],
-      "i20": [3499, 5899, 8599, 269, 219, 219, 429],
-      "Creta": [3999, 6499, 9499, 349, 299, 299, 499],
-      "Punch": [3299, 5699, 8399, 239, 189, 189, 389],
-      "Tiago": [3099, 5399, 7999, 219, 169, 169, 359],
-      "Nexon": [3799, 6199, 8999, 319, 269, 269, 459],
-      "Glanza": [3599, 5899, 8599, 289, 239, 239, 429],
-      "Innova": [4499, 7099, 9999, 379, 329, 329, 529],
-      "Fortuner": [4999, 7599, 10499, 429, 379, 379, 579],
-      "Bolero": [3699, 5999, 8699, 279, 229, 229, 409],
-      "XUV300": [3899, 6299, 8899, 299, 249, 249, 439],
-      "Thar": [4199, 6699, 9399, 339, 289, 289, 479],
-      "Amaze": [3199, 5699, 8299, 239, 189, 189, 389],
-      "City": [3799, 6199, 8999, 319, 269, 269, 459],
-      "WR-V": [3599, 5899, 8599, 289, 239, 239, 429],
-      "Sonet": [3699, 5999, 8699, 299, 249, 249, 439],
-      "Seltos": [3999, 6499, 9499, 349, 299, 299, 499],
-      "Carens": [4199, 6699, 9799, 359, 309, 309, 509],
-      "Kwid": [2999, 5399, 7999, 199, 149, 149, 349],
-      "Triber": [3299, 5699, 8299, 249, 199, 199, 399],
-      "Kiger": [3499, 5899, 8599, 269, 219, 219, 429],
-      "Polo": [3599, 5999, 8799, 299, 249, 249, 449],
-      "Virtus": [3799, 6299, 8999, 319, 269, 269, 459],
-      "Taigun": [3999, 6499, 9499, 349, 299, 299, 499],
-      "Fabia": [3399, 5799, 8499, 279, 229, 229, 409],
-      "Slavia": [3699, 5999, 8799, 299, 249, 249, 439],
-      "Kushaq": [3899, 6299, 8999, 319, 269, 269, 459]
-    };
-
-    const brandSelect = document.getElementById("brand-select");
-    const modelSelect = document.getElementById("model-select");
-
-    brandSelect.addEventListener("change", () => {
-      modelSelect.innerHTML = '<option value="">Select Model</option>';
-      const models = modelData[brandSelect.value] || [];
-      models.forEach(model => {
-        const opt = document.createElement("option");
-        opt.value = model;
-        opt.textContent = model;
-        modelSelect.appendChild(opt);
-      });
-    });
-
-    modelSelect.addEventListener("change", () => {
-      const model = modelSelect.value;
-      if (priceChart[model]) {
-        const [basic, premium, deluxe, oil, interior, exterior, windshield] = priceChart[model];
-        document.getElementById("basic-price").textContent = `₹${basic}`;
-        document.getElementById("premium-price").textContent = `₹${premium}`;
-        document.getElementById("deluxe-price").textContent = `₹${deluxe}`;
-        document.getElementById("oil-price").textContent = `₹${oil}`;
-        document.getElementById("interior-price").textContent = `₹${interior}`;
-        document.getElementById("exterior-price").textContent = `₹${exterior}`;
-        document.getElementById("windshield-price").textContent = `₹${windshield}`;
-      }
-    });
-  </script>
+  <script>
+    const modelData = {
+      "Maruti": ["Alto", "Swift", "Baleno"],
+      "Hyundai": ["i10", "i20", "Creta"],
+      "Tata": ["Tiago", "Nexon", "Harrier"],
+      "Toyota": ["Glanza", "Innova", "Fortuner"],
+      "Mahindra": ["Bolero", "XUV300", "Scorpio", "Thar"],
+      "Honda": ["Amaze", "City", "Elevate"],
+      "Kia": ["Sonet", "Seltos", "EV6"],
+      "Renault": ["Kwid", "Triber", "Kiger"],
+      "Volkswagen": ["Polo", "Virtus", "Taigun"],
+      "Skoda": ["Fabia", "Slavia", "Octavia"],
+      "Nissan": ["Magnite", "Kicks"],
+      "MG": ["Astor", "Hector"],
+      "Jeep": ["Compass", "Meridian"],
+      "Ford": ["EcoSport", "Endeavour"],
+      "BMW": ["X1", "X3", "5 Series"]
+    };
+  
+    const brandTier = {
+      "Maruti": 1,
+      "Renault": 1,
+      "Tata": 1,
+      "Hyundai": 2,
+      "Kia": 2,
+      "Honda": 2,
+      "Mahindra": 2,
+      "Toyota": 3,
+      "Ford": 3,
+      "Nissan": 3,
+      "Skoda": 4,
+      "Volkswagen": 4,
+      "MG": 4,
+      "Jeep": 4,
+      "BMW": 5
+    };
+  
+    const basePrices = {
+      basic: 2499,
+      premium: 4499,
+      deluxe: 6499,
+      oil: 599,
+      interior: 299,
+      exterior: 299,
+      windshield: 899
+    };
+  
+    const priceChart = {};
+  
+    for (const [brand, models] of Object.entries(modelData)) {
+      const tier = brandTier[brand];
+      const multiplier = 0.8 + tier * 0.2;
+  
+      models.forEach(model => {
+        const basic = Math.round(basePrices.basic * multiplier);
+        const premium = Math.round(basePrices.premium * multiplier);
+        const deluxe = Math.round(basePrices.deluxe * multiplier);
+        const oil = Math.round(basePrices.oil * multiplier);
+        const interior = Math.round(basePrices.interior * multiplier);
+        const exterior = Math.round(basePrices.exterior * multiplier);
+        const windshield = Math.round(basePrices.windshield * multiplier);
+  
+        priceChart[model] = [basic, premium, deluxe, oil, interior, exterior, windshield];
+      });
+    }
+  
+    const brandSelect = document.getElementById("brand-select");
+    const modelSelect = document.getElementById("model-select");
+  
+    // Populate brand dropdown
+    for (const brand in modelData) {
+      const opt = document.createElement("option");
+      opt.value = brand;
+      opt.textContent = brand;
+      brandSelect.appendChild(opt);
+    }
+  
+    brandSelect.addEventListener("change", () => {
+      modelSelect.innerHTML = '<option value="">Select Model</option>';
+      const models = modelData[brandSelect.value] || [];
+      modelSelect.disabled = models.length === 0;
+  
+      models.forEach(model => {
+        const opt = document.createElement("option");
+        opt.value = model;
+        opt.textContent = model;
+        modelSelect.appendChild(opt);
+      });
+    });
+  
+    modelSelect.addEventListener("change", () => {
+      const model = modelSelect.value;
+      if (priceChart[model]) {
+        const [basic, premium, deluxe, oil, interior, exterior, windshield] = priceChart[model];
+        document.getElementById("basic-price").textContent = `₹${basic}`;
+        document.getElementById("premium-price").textContent = `₹${premium}`;
+        document.getElementById("deluxe-price").textContent = `₹${deluxe}`;
+        document.getElementById("oil-price").textContent = `₹${oil}`;
+        document.getElementById("interior-price").textContent = `₹${interior}`;
+        document.getElementById("exterior-price").textContent = `₹${exterior}`;
+        document.getElementById("windshield-price").textContent = `₹${windshield}`;
+      }
+    });
+  </script>  
 </body>
 </html>
