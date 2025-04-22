@@ -15,28 +15,6 @@ Welcome to the **AutoCare** website project! This is a modern, responsive web ap
 
 - **HTML5**
 - **CSS3**
-- 
-## Folder Structure
-
-/WebDevProject
-│
-├── /Files
-│   └── index.html
-│   ├── contact.html
-│   ├── booking.html
-│   ├── pricing.html
-│   ├── faq.html
-│   ├── review.html
-│   ├── booking.html
-│   └── styles/style.css
-│   ├── /images
-│       └── logo.png
-│       ├── logo.png
-│       ├── logo.png
-│       ├── logo.png
-│       ├── logo.png
-│       ├── logo.png
-└── README.md
 
 ## Live Demo
 
