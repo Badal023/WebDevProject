@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login / Signup</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <h1><span class="orange">Auto</span>Care <span class="blue">Xpress</span></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="booking.html">Book Now</a>
+      <a href="about.html">About</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="Login.html" class="active">Login/SignUp</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <div class="review-form">
+      <h2 style="text-align:center; color: #1e40af; margin-bottom: 30px;">Welcome Back!</h2>
+
+      <!-- Login Form -->
+      <form action="booking.html" method="GET">
+        <h3 style="margin-bottom: 15px; color: #2563eb;">Login</h3>
+        <input type="email" name="loginEmail" placeholder="Email" required />
+        <input type="password" name="loginPassword" placeholder="Password" required />
+        <button type="submit" class="btn-primary">Login</button>
+      </form>
+
+      <hr style="margin: 40px 0; border: none; border-top: 1px solid #ddd;">
+      <h1>OR</h1>
+      <hr style="margin: 40px 0; border: none; border-top: 1px solid #ddd;">
+
+      <!-- Signup Form -->
+      <form action="booking.html" method="GET">
+        <h3 style="margin-bottom: 15px; color: #f97316;">Sign Up</h3>
+        <input type="text" name="signupName" placeholder="Full Name" required />
+        <input type="email" name="signupEmail" placeholder="Email" required />
+        <input type="password" name="signupPassword" placeholder="Password" required />
+        <input type="password" name="signupConfirm" placeholder="Confirm Password" required />
+        <button type="submit" class="btn-secondary">Sign Up</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-bottom">
+      &copy; 2025 Your Company. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
