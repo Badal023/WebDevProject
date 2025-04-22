@@ -54,25 +54,33 @@
       </div>
     </div>
   </section>
-
+    <section class="section">
+    <h2>Select Your Car</h2>
+    <select id="brand-select">
+      <option value="">Select Brand</option>
+    </select>
+    <select id="model-select" disabled>
+      <option value="">Select Model</option>
+    </select>
+  </section>
   <section class="packages">
     <h2>Service Packages</h2>
     <p>Choose the right care package for your vehicle</p>
     <div class="package-row">
       <div class="package-card">
         <h3>Basic Care</h3>
-        <h4>₹3,999 / service</h4>
+        <h4 id="basic-price">₹Choose a Model/ service</h4>
         <ul>
           <li>Standard Oil Change</li>
           <li>Exterior Hand Wash</li>
           <li>Fluid Level Check</li>
           <li>Vacuum Interior</li>
         </ul>
-        <a href="booking.html" class="btn-secondary">Book Now</a>
+        <a href="booking.html" class="btn-secondary">Select Model & Book Now</a>
       </div>
       <div class="package-card featured">
         <h3>Premium Care</h3>
-        <h4>₹6,999 / service</h4>
+        <h4 id="premium-price">₹Choose a Model/ service</h4>
         <ul>
           <li>Synthetic Oil Change</li>
           <li>Premium Wash & Wax</li>
@@ -80,11 +88,11 @@
           <li>Interior Shampoo + Brush</li>
           <li>Basic Windshield Repair</li>
         </ul>
-        <a href="booking.html" class="btn-primary">Book Now</a>
+        <a href="booking.html" class="btn-primary">Select Model & Book Now</a>
       </div>
       <div class="package-card">
         <h3>Deluxe Care</h3>
-        <h4>₹9,999 / service</h4>
+        <h4 id="deluxe-price">₹Choose a Model/ service</h4>
         <ul>
           <li>Premium Synthetic Oil</li>
           <li>Deluxe Wash + Polish</li>
@@ -93,7 +101,7 @@
           <li>Engine Bay Degreasing</li>
           <li>Full Windshield Replacement</li>
         </ul>
-        <a href="booking.html" class="btn-secondary">Book Now</a>
+        <a href="booking.html" class="btn-secondary">Select Model & Book Now</a>
       </div>
     </div>
   </section>
@@ -176,6 +184,8 @@
       <p>&copy; 2025 AutoCare Xpress. All Rights Reserved.</p>
     </div>
   </footer>
+ <script src="scripts/rel_pricing.js"></script>
 </body>
 </html>
 
+  
