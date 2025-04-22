@@ -33,9 +33,15 @@
           <input type="email" name="email" placeholder="Email" required />
           <input type="tel" name="phone" placeholder="Phone Number" required />
           <input type="text" name="address" placeholder="Address" required />
-          <input type="text" name="carModel" placeholder="Car Model & Year" required />
           <input type="datetime-local" name="dateTime" required />
-
+    <section class="section">
+    <select id="brand-select">
+      <option value="">Select Brand</option>
+    </select>
+    <select id="model-select" disabled>
+      <option value="">Select Model</option>
+    </select>
+  </section>
           <select name="package" required>
             <option value="">Select Package</option>
             <option>Basic Care</option>
@@ -91,5 +97,6 @@
     <p>&copy; 2025 AutoCare Xpress. All Rights Reserved.</p>
   </div>
 </footer>
+  <script src="scripts/rel_pricing.js"></script>
 </body>
 </html>
